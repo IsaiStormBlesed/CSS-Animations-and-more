@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits | Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="bg"></div>
+        <!--Header-->
+        <header>
+            <a href="#" class="logo">Fruits</a>
+
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <!--Main Content-->
+        <div class="content">
+            <div class="textBox">
+                <h2>Eat Fresh Every Day</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus obcaecati numquam omnis laboriosam, laudantium doloremque. Beatae magnam, deserunt quod distinctio quasi cupiditate</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/apple.png" class="fruitContainer">
+            </div>
+        </div>
+        <!--Slider-->
+        <ul class="slider">
+            <li data-text="Apple" class="activee"><img src="images/apple.png" alt="#" onclick="fruitSlider('images/apple.png'); changeBgColor('#fc4a55')"></li>
+            <li data-text="Dragon Fruits"><img src="images/dragonFruits.png" alt="#" onclick="fruitSlider('images/dragonFruits.png'); changeBgColor('#fb6cb2')"></li>
+            <li data-text="Mango"><img src="images/mango.png" alt="#" onclick="fruitSlider('images/mango.png'); changeBgColor('#ffcc02')"></li>
+            <li data-text="Pine Apple"><img src="images/pineApple.png" alt="#" onclick="fruitSlider('images/pineApple.png'); changeBgColor('#ffb42d')"></li>
+            <li data-text="Watermelon"><img src="images/watermelon.png" alt="#" onclick="fruitSlider('images/watermelon.png'); changeBgColor('#92ba3c')"></li>
+        </ul>
+
+        <!--Social-->
+        <ul class="socials">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
